@@ -1,8 +1,6 @@
-import { DefaultUi, Player, Youtube } from "@vime/react";
+import YouTube from 'react-youtube';
 import { CaretRight, DiscordLogo, FileArrowDown, Lightning , CircleDashed } from "phosphor-react";
 import { gql, useQuery } from "@apollo/client";
-
-import '@vime/core/themes/default.css';
 
 
 const GET_LESSON_BY_SLUG = gql`
@@ -44,6 +42,11 @@ export const Video = ({lessonSlug}:VideoProps) => {
         }
     });
 
+    const opts = {
+        height: '500',
+        width: '100%',
+    }
+
     if(!data){
         return (
             <div className="w-[1100px] flex items-center justify-center">
@@ -56,10 +59,9 @@ export const Video = ({lessonSlug}:VideoProps) => {
         <div className="flex-1">
             <div className="bg-black flex justify-center">
                 <div className="h-full w-full max-w-[1100px] max-h-[60vh] aspect-video">
-                    <Player>
-                        <Youtube videoId={data.lesson.videoId}/>
-                        <DefaultUi />
-                    </Player>
+                    
+                        <YouTube videoId={data.lesson.videoId} opts={opts} />
+                    
                 </div>
             </div>
 

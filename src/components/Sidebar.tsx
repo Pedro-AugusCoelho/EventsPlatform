@@ -65,7 +65,7 @@ export const Sidebar = ({ Menu }:SidebarProps) => {
     }
     
     return(
-        <aside>
+        <aside className="overflow-y-auto">
             
             <span className="text-center xl:text-left uppercase font-bold text-2xl pb-6 mb-6 border-b border-gray-500 block">
                 Cronograma de aulas
