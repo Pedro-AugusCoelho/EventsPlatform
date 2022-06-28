@@ -42,7 +42,7 @@ Desenvolvido utilizando as seguintes tecnologias:
 - [PHOSPHOR-REACT](https://www.npmjs.com/package/phosphor-react)
 - [GRAPHCMS](https://graphcms.com/)
 - [APOLLO](https://www.apollographql.com/)
-- [@VIME/REACT](https://www.npmjs.com/package/@vime/react)
+- [REACT-YOUTUBE](https://www.npmjs.com/package/react-youtube)
 - [TAILWINDCSS](https://tailwindcss.com/)
 - [VITE](https://vitejs.dev/)
 - [GRAPHQL](https://graphql.org/)
